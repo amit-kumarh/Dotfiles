@@ -7,7 +7,7 @@
 - link:
     ~/.zshenv: zshenv
     ~/.config/nvim:
-    ~/.config/tmux:
+    ~/.config/tmux/tmux.conf: tmux/tmux.conf
     ~/.config/X11:
     ~/.config/i3:
     ~/.config/i3blocks:
