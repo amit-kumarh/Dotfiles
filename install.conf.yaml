@@ -1,0 +1,20 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.zshenv: zshenv
+    ~/.config/nvim:
+    ~/.config/tmux:
+    ~/.config/X11:
+    ~/.config/i3:
+    ~/.config/i3blocks:
+
+- create:
+    - ~/.config
+    - ~/.vim/
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
