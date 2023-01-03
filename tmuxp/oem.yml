@@ -1,0 +1,6 @@
+session_name: formula
+windows:
+  - window_name: terms
+    start_directory: ~/Documents/formula/olin-electric-motorsports
+    panes:
+      - shell_command: git status

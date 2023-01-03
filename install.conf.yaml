@@ -11,6 +11,8 @@
     ~/.config/X11:
     ~/.config/i3:
     ~/.config/i3blocks:
+    ~/.config/tmuxp:
+    ~/.config/zsh/.zshrc: zsh/.zshrc
 
 - create:
     - ~/.config

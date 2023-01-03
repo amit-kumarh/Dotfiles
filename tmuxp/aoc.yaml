@@ -1,0 +1,9 @@
+session_name: advent
+windows:
+  - window_name: vim
+    start_directory: ~/Documents/Advent of Code/2022
+    panes:
+      - shell_command: nvim .
+  - window_name: runner
+    start_directory: ~/Documents/Advent of Code/2022
+    panes:

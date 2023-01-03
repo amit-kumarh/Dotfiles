@@ -1,0 +1,10 @@
+session_name: dotfiles
+windows:
+  - window_name: install.conf.yaml
+    start_directory: ~/dotfiles
+    panes:
+      - shell_command: nvim install.conf.yaml
+  - window_name: vim
+    start_directory: ~/dotfiles
+    panes:
+      - shell_command: nvim .

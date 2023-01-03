@@ -219,7 +219,7 @@ set $lockbgpath "/home/amit/Pictures/Wallpapers/car_chase.png"
 
 
 # Bind lock
-bindsym $mod+shift+x exec betterlockscreen  -l blur
+bindsym $mod+shift+x exec betterlockscreen -l blur
 
 # disable window titlebars
 for_window [class="^.*"] border pixel 2
