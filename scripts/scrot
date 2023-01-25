@@ -1,0 +1,10 @@
+if [ $# -eq 0 ];
+then
+  escrotum -s ~/Pictures/Screenshots/%b%d::%H%M%S.png
+  exit 1
+else
+  escrotum -s ~/Pictures/Screenshots/$1_%b%d::%H%M%S.png
+  exit 1
+fi
+
+
