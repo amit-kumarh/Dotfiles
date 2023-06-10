@@ -128,6 +128,7 @@ alias pysmash='cd ~/Documents/Freshman/SoftDes/pysmash'
 alias canviewer='cd ~/Documents/formula/olin-electric-motorsports && bazel run //projects/canviewer'
 alias website='cd ~/Documents/amit-kumarh.github.io'
 alias timezone='timedatectl set-timezone "$(curl --fail https://ipapi.co/timezone)"'
+alias softdes='cd ~/Documents/Softdes/softdes-2023-01-grading'
 
 alias dsa='cd ~/Documents/DSA'
 alias pie='cd ~/Documents/PIE'

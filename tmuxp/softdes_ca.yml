@@ -1,0 +1,8 @@
+session_name: softdes_grading
+windows:
+  - window_name: terms
+    start_directory: ~/Documents/Softdes/softdes-2023-01-grading/course-repos
+    panes:
+      - shell_command: git pull && git submodule update
+  - window_name: solutions
+    start_directory: ~/Documents/Softdes/softdes-2023-01-grading/solutions/assignments/

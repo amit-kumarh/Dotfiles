@@ -189,6 +189,8 @@ bar {
 	position bottom
 	font pango: Arca Majora 3 Heavy 14
 	bindsym button1 nop
+	bindsym button4 nop
+	bindsym button5 nop
 	colors {
 		background $bg-color
 	    	separator #757575
@@ -226,8 +228,8 @@ for_window [class="^.*"] border pixel 2
 
 # gaps config
 # inner/outer gaps
-gaps inner 15
-gaps outer 15
+# gaps inner 15
+# gaps outer 15
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec pactl -- set-sink-volume 0 +5%  
