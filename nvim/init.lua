@@ -1,0 +1,2 @@
+require("amit")
+print("hello")

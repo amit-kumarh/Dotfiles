@@ -119,33 +119,29 @@ alias i3config='nvim /home/amit/.config/i3/config'
 alias winmount='sudo mount /dev/nvme0n1p3 /mnt/windows'
 alias oem='cd ~/Documents/formula/olin-electric-motorsports'
 alias review='cd ~/Documents/formula/review/olin-electric-motorsports'
-alias aoc='cd ~/Documents/Advent\ of\ Code/2022'
 alias nvimconfig='nvim ~/.config/nvim/init.vim'
 alias tmuxconfig='nvim ~/.config/tmux/tmux.conf'
 alias wordledir='cd ~/Documents/python/wordle'
 alias vim='nvim'
 alias pysmash='cd ~/Documents/Freshman/SoftDes/pysmash'
 alias canviewer='cd ~/Documents/formula/olin-electric-motorsports && bazel run //projects/canviewer'
-alias website='cd ~/Documents/amit-kumarh.github.io'
 alias timezone='timedatectl set-timezone "$(curl --fail https://ipapi.co/timezone)"'
 alias softdes='cd ~/Documents/Softdes/softdes-2023-01-grading'
 
-alias dsa='cd ~/Documents/DSA'
-alias pie='cd ~/Documents/PIE'
-alias qea='cd ~/Documents/QEA3'
-
+alias rust='cd ~/Documents/code/comp6991'
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/dotfiles/scripts:$PATH"
 export PATH="/usr/bin/vendor_perl:$PATH"
 export PATH="$HOME/.pyenv/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
-eval "$(pyenv init --path)"
-eval "$(pyenv virtualenv-init -)"
+# pyenv
+eval "$(pyenv init -)"
 
 export PATH="$HOME/.poetry/bin:$PATH"
 

@@ -1,0 +1,4 @@
+session_name: COMP6991
+windows:
+  - window_name: nvim
+    start_directory: ~/Documents/code/comp6991

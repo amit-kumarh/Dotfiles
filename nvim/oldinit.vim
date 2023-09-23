@@ -56,6 +56,8 @@ nnoremap <leader>pb <cmd>Telescope buffers<cr><esc>
 
 nnoremap <leader>py :!python "%"<CR>
 nnoremap <leader>go :GoRun <CR>
+nnoremap <leader>rc :!cargo check<CR>
+nnoremap <leader>ru :!cargo run "%"<CR>
 
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
@@ -68,21 +70,19 @@ require'nvim-treesitter.configs'.setup {
         enable = true,
         disable = {"python"}
     },
-ensure_installed = {'python', 'c', 'java', 'typescript'}
+    ensure_installed = {'python', 'c', 'java', 'typescript', 'rust', 'go', 'toml'}
 }
 EOF
-
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ CheckBackspace() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
+" Make <CR> auto-select the first completion item and notify coc.nvim to
+" format on enter, <cr> could be remapped by other vim plugin
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
@@ -143,11 +143,6 @@ map <down> <nop>
 map <left> <nop>
 map <right> <nop>
 
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
-
 " Tabbing
 map <leader>tn :tabnew<cr>
 map <leader>t<leader> :tabnext<cr>
@@ -156,17 +151,8 @@ map <leader>tc :tabclose<cr>
 map <leader>to :tabonly<cr>
 
 
+" Wrapping
 map <leader>w bcw""jjP
 map <leader>wp bcw()jjP
-"
-" Use <c-space> to trigger completion.
-if has('nvim')
-  inoremap <silent><expr> <c-space> coc#refresh()
-else
-  inoremap <silent><expr> <c-@> coc#refresh()
-endif
 
-" Make <CR> auto-select the first completion item and notify coc.nvim to
-" format on enter, <cr> could be remapped by other vim plugin
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+autocmd InsertLeave * write
