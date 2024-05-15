@@ -21,6 +21,8 @@ return require('packer').startup(function(use)
     use('vim-airline/vim-airline')
     use('vim-airline/vim-airline-themes')
 
+    use('ThePrimeagen/vim-be-good')
+
 
     use {
         'VonHeikemen/lsp-zero.nvim',
@@ -38,4 +40,6 @@ return require('packer').startup(function(use)
             { 'L3MON4D3/LuaSnip' },
         }
     }
+
+    use 'simrat39/rust-tools.nvim'
 end)

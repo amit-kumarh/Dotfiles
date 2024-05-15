@@ -1,3 +1,5 @@
+vim.g.mapleader = " "
+
 vim.keymap.set("i", "jj", "<ESC>")
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
@@ -13,7 +15,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 -- execute code
 vim.keymap.set("n", "<leader>py", ':!python "%" <CR>')
-vim.keymap.set("n", "<leader>rc", ':!cargo run<CR>')
+vim.keymap.set("n", "<leader>ru", ':!cargo run<CR>')
 
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])

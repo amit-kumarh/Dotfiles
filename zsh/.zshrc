@@ -115,20 +115,15 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 
+alias matlab='~/matlab2023install/bin/matlab'
 alias i3config='nvim /home/amit/.config/i3/config'
 alias winmount='sudo mount /dev/nvme0n1p3 /mnt/windows'
 alias oem='cd ~/Documents/formula/olin-electric-motorsports'
 alias review='cd ~/Documents/formula/review/olin-electric-motorsports'
-alias nvimconfig='nvim ~/.config/nvim/init.vim'
-alias tmuxconfig='nvim ~/.config/tmux/tmux.conf'
-alias wordledir='cd ~/Documents/python/wordle'
 alias vim='nvim'
-alias pysmash='cd ~/Documents/Freshman/SoftDes/pysmash'
 alias canviewer='cd ~/Documents/formula/olin-electric-motorsports && bazel run //projects/canviewer'
 alias timezone='timedatectl set-timezone "$(curl --fail https://ipapi.co/timezone)"'
-alias softdes='cd ~/Documents/Softdes/softdes-2023-01-grading'
-
-alias rust='cd ~/Documents/code/comp6991'
+alias ltspice='wine ~/.wine/drive_c/Program\ Files/LTC/LTspiceXVII/XVIIx64.exe'
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/dotfiles/scripts:$PATH"
