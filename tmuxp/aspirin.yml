@@ -1,0 +1,4 @@
+session_name: aspirin
+windows:
+  - window_name: nvim
+    start_directory: ~/Documents/code/aspirin

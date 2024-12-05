@@ -130,6 +130,7 @@ export PATH="$HOME/dotfiles/scripts:$PATH"
 export PATH="/usr/bin/vendor_perl:$PATH"
 export PATH="$HOME/.pyenv/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

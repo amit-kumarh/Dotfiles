@@ -12,7 +12,7 @@
     ~/.config/i3:
     ~/.config/i3blocks:
     ~/.config/tmuxp:
-    ~/.config/zsh/.zshrc: zsh/.zshrc
+    ~/.config/zsh/.zshrc:
 
 - create:
     - ~/.config

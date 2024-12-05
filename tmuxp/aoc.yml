@@ -1,8 +1,8 @@
 session_name: advent
 windows:
   - window_name: vim
-    start_directory: ~/Documents/code/advent_of_code/2023
+    start_directory: ~/Documents/code/advent_of_code/2024
     panes:
       - shell_command: nvim .
   - window_name: runner
-    start_directory: ~/Documents/code/advent_of_code/2023
+    start_directory: ~/Documents/code/advent_of_code/2024
