@@ -1,0 +1,4 @@
+session_name: SCOPE
+windows:
+  - window_name: main
+    start_directory: ~/Documents/scope/LineVisionaries

@@ -60,7 +60,7 @@ URxvt.urgentOnBell: true
 URxvt.depth: 24
 URxvt.iso14755: false
 URxvt.transparent: true
-URxvt.shading: 35
+URxvt.shading: 30
 
 !! Common Keybinds for Navigations
 URxvt.keysym.Control-Up: \033[1;5A

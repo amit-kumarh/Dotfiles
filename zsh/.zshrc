@@ -118,8 +118,6 @@ source $ZSH/oh-my-zsh.sh
 alias matlab='~/matlab2023install/bin/matlab'
 alias i3config='nvim /home/amit/.config/i3/config'
 alias winmount='sudo mount /dev/nvme0n1p3 /mnt/windows'
-alias oem='cd ~/Documents/formula/olin-electric-motorsports'
-alias review='cd ~/Documents/formula/review/olin-electric-motorsports'
 alias vim='nvim'
 alias canviewer='cd ~/Documents/formula/olin-electric-motorsports && bazel run //projects/canviewer'
 alias timezone='timedatectl set-timezone "$(curl --fail https://ipapi.co/timezone)"'
@@ -131,6 +129,7 @@ export PATH="/usr/bin/vendor_perl:$PATH"
 export PATH="$HOME/.pyenv/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/Documents/CompArch/oss-cad-suite/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -151,3 +150,10 @@ if [ $(command -v "fzf") ]; then
     source /usr/share/fzf/key-bindings.zsh
     source /usr/share/fzf/completion.zsh
 fi
+
+### GCLOUD STUFF ###
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/amit/actual-gcp/google-cloud-sdk/path.zsh.inc' ]; then . '/home/amit/actual-gcp/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/amit/actual-gcp/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/amit/actual-gcp/google-cloud-sdk/completion.zsh.inc'; fi
